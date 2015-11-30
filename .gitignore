@@ -1,0 +1,15 @@
+**/bin
+**/bin/
+**/bin/Debug
+**/bin/Debug/
+**/bin/Release
+**/bin/Release/
+.vs
+.user
+**/Debug
+**/Debug/
+**/Release
+**/Release/
+packages/
+**/packages
+**/packages/

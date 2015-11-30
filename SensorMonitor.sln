@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Component", "Component", "{DB3111E6-5A8E-4C6A-9E24-36B4C083546D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Core", "SensorMonitor.Core\SensorMonitor.Core.csproj", "{34DB24D3-B9E8-4C95-A6E7-1A376ABD2DD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Component.Rx", "Component\SensorMonitor.Component.Rx\SensorMonitor.Component.Rx.csproj", "{B765FC82-26AF-461C-8C79-5F9761AB7FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Component.Tx", "Component\SensorMonitor.Component.Tx\SensorMonitor.Component.Tx.csproj", "{DA52605E-90DE-49C7-A7B3-305F1D250C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Component.Log", "Component\SensorMonitor.Component.Log\SensorMonitor.Component.Log.csproj", "{F30EFCB1-FC4E-431B-A397-AE09E287D85D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Component.Schedule", "Component\SensorMonitor.Component.Schedule\SensorMonitor.Component.Schedule.csproj", "{277C2762-9B87-407A-A562-9EF0C1E770DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Host", "SensorMonitor.Host\SensorMonitor.Host.csproj", "{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34DB24D3-B9E8-4C95-A6E7-1A376ABD2DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DB24D3-B9E8-4C95-A6E7-1A376ABD2DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DB24D3-B9E8-4C95-A6E7-1A376ABD2DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DB24D3-B9E8-4C95-A6E7-1A376ABD2DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B765FC82-26AF-461C-8C79-5F9761AB7FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B765FC82-26AF-461C-8C79-5F9761AB7FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B765FC82-26AF-461C-8C79-5F9761AB7FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B765FC82-26AF-461C-8C79-5F9761AB7FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA52605E-90DE-49C7-A7B3-305F1D250C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA52605E-90DE-49C7-A7B3-305F1D250C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA52605E-90DE-49C7-A7B3-305F1D250C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA52605E-90DE-49C7-A7B3-305F1D250C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30EFCB1-FC4E-431B-A397-AE09E287D85D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30EFCB1-FC4E-431B-A397-AE09E287D85D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30EFCB1-FC4E-431B-A397-AE09E287D85D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30EFCB1-FC4E-431B-A397-AE09E287D85D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277C2762-9B87-407A-A562-9EF0C1E770DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277C2762-9B87-407A-A562-9EF0C1E770DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277C2762-9B87-407A-A562-9EF0C1E770DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277C2762-9B87-407A-A562-9EF0C1E770DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B765FC82-26AF-461C-8C79-5F9761AB7FBB} = {DB3111E6-5A8E-4C6A-9E24-36B4C083546D}
+		{DA52605E-90DE-49C7-A7B3-305F1D250C26} = {DB3111E6-5A8E-4C6A-9E24-36B4C083546D}
+		{F30EFCB1-FC4E-431B-A397-AE09E287D85D} = {DB3111E6-5A8E-4C6A-9E24-36B4C083546D}
+		{277C2762-9B87-407A-A562-9EF0C1E770DE} = {DB3111E6-5A8E-4C6A-9E24-36B4C083546D}
+	EndGlobalSection
+EndGlobal
