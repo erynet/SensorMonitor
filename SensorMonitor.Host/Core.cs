@@ -71,6 +71,7 @@ namespace SensorMonitor.Host
                 rx = new Regex($@"(SensorMonitor.Component.{libName}.\w+).dll", 
                     RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Compiled);
             }
+            //rx.Match("abc").
             var assemblyCandidates = (from file in fileNames
                                          where rx.IsMatch(file)
                                          orderby file

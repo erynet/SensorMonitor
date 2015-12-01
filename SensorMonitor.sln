@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Component.Sch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Host", "SensorMonitor.Host\SensorMonitor.Host.csproj", "{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitor.Component.Common", "Component\SensorMonitor.Component.Common\SensorMonitor.Component.Common.csproj", "{A67040A0-9B66-4D3C-81A1-94619A56AD00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA6225DD-B987-45E0-AC2C-CBA0A03DE4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67040A0-9B66-4D3C-81A1-94619A56AD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67040A0-9B66-4D3C-81A1-94619A56AD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67040A0-9B66-4D3C-81A1-94619A56AD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67040A0-9B66-4D3C-81A1-94619A56AD00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,5 +62,6 @@ Global
 		{DA52605E-90DE-49C7-A7B3-305F1D250C26} = {DB3111E6-5A8E-4C6A-9E24-36B4C083546D}
 		{F30EFCB1-FC4E-431B-A397-AE09E287D85D} = {DB3111E6-5A8E-4C6A-9E24-36B4C083546D}
 		{277C2762-9B87-407A-A562-9EF0C1E770DE} = {DB3111E6-5A8E-4C6A-9E24-36B4C083546D}
+		{A67040A0-9B66-4D3C-81A1-94619A56AD00} = {DB3111E6-5A8E-4C6A-9E24-36B4C083546D}
 	EndGlobalSection
 EndGlobal

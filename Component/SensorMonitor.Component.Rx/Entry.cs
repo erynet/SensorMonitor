@@ -25,16 +25,16 @@ namespace SensorMonitor.Component.Rx
         public string NameSpace = "SensorMonitor.Component.Rx.Entry";
 
         private BusHub _busHub;
-        private bool _loopContinue;
-
+        
         public IPAddress HostIp { get; private set; }
         public int HostPort { get; private set; }
+
+        private IReactor _reactor;
 
         public Entry()
         {
             Log = null;
-            _loopContinue = true;
-
+            
             HostIp = IPAddress.Any;
             HostPort = 1337;
         }
@@ -43,12 +43,14 @@ namespace SensorMonitor.Component.Rx
         {
             var bootstrapper =
                 new ServerBootstrap()
-                    .WorkerThreads(2)
+                    .WorkerThreads(4)
                     .SetTransport(TransportType.Udp)
                     .Build();
-            IReactor reactor =
-                bootstrapper.NewReactor(NodeBuilder.BuildNode().Host(HostIp).WithPort(HostPort));
-            reactor.OnConnection += (node, connection) =>
+            _reactor = bootstrapper.NewReactor(
+                NodeBuilder.BuildNode()
+                    .Host(HostIp)
+                    .WithPort(HostPort));
+            _reactor.OnConnection += (node, connection) =>
             {
                 //ServerPrint(node,
                 //    string.Format("Accepting connection from... {0}:{1}", node.Host, node.Port));
@@ -56,12 +58,7 @@ namespace SensorMonitor.Component.Rx
             };
             //reactor.OnDisconnection += (reason, address) => ServerPrint(address.RemoteHost,
             //    string.Format("Closed connection to... {0}:{1} [Reason:{2}]", address.RemoteHost.Host, address.RemoteHost.Port, reason.Type));
-            reactor.Start();
-
-            while (_loopContinue)
-            {
-                Thread.Sleep(250);
-            }
+            _reactor.Start();
         }
 
         public static void UdpPackerReceiveCallback(NetworkData data, IConnection connection)
@@ -94,7 +91,7 @@ namespace SensorMonitor.Component.Rx
 
         public void Dispose()
         {
-            _loopContinue = false;
+            _reactor.Stop();
         }
 
         public bool Initialize()

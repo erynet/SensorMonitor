@@ -8,12 +8,12 @@ using SensorMonitor.Core;
 using SensorMonitor.Core.Event;
 using SensorMonitor.Core.Interfaces;
 
-namespace SensorMonitor.Component.Schedule
+namespace SesnsorMonitor.Component.Common
 {
     public class Entry : ISubComponent
     {
         #region Class Specific
-        public string NameSpace = "SensorMonitor.Component.Common.Entry";
+        public string NameSpace = "SensorMonitor.Component.Schedule.Entry";
 
         private BusHub _busHub;
 
